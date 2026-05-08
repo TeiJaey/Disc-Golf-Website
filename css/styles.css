@@ -124,6 +124,21 @@ p {
     position: relative;
 }
 
+.search-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+   transform: translateX(-50%);
+    width: min(100%, 500px);
+    max-height: 200px;
+    overflow-y: auto;
+    background: #171a21;
+    border: 1px solid #2a2f3a;
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    z-index: 1001;
+}
+
 .search-dropdown.hidden {
     display: none;
 }
