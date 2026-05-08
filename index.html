@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disc golf site</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/javascript/script.js" defer></script>
 </head>
 <body>
         <div class="navbar">
@@ -18,24 +18,56 @@
                     <input type="text" placeholder="Search courses, discs, players...">
                 </div>
 
-                <div class="profile">👤</div>
+                <a href="/pages/profile.html" class="profile">👤</a>
             </div>
 
             <!-- NAV LINKS -->
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Courses</a>
-                <a href="#">Discs</a>
-                <a href="#">Leaderboard</a>
-                <a href="#">Community</a>
+                <a href="/">Home</a>
+                <a href="/pages/courses.html">Courses</a>
+                <a href="/pages/discs.html">Discs</a>
+                <a href="/pages/leaderboard.html">Leaderboard</a>
+                <a href="/pages/quiz.html">Quiz</a>
             </div>
 
         </div>
 
     <!-- MAIN PAGE CONTENT -->
-    <div class="main">
-        <h1>Welcome to Disc Golf Hub</h1>
-        <p>Your one-stop place for courses, stats, and community.</p>
+    <div class="main home-page">
+
+        <div class="hero-section">
+            <h1>Find Your Next Disc Golf Course</h1>
+            <p>Search courses, explore discs, compete on leaderboards, and test your knowledge.</p>
+
+            <a href="/pages/courses.html" class="hero-button">
+                Browse Courses
+            </a>
+        </div>
+
+        <div class="home-cards">
+
+            <a href="/pages/courses.html" class="home-card">
+                <h2>Courses</h2>
+                <p>Explore local and popular disc golf courses.</p>
+            </a>
+
+            <a href="/pages/discs.html" class="home-card">
+                <h2>Discs</h2>
+                <p>Browse the most popular discs in the sport.</p>
+            </a>
+
+            <a href="/pages/leaderboard.html" class="home-card">
+                <h2>Leaderboard</h2>
+                <p>See the top ranked players this season.</p>
+            </a>
+
+            <a href="/pages/quiz.html" class="home-card">
+                <h2>Quiz</h2>
+                <p>Test your disc golf knowledge and improve.</p>
+            </a>
+
+        </div>
+
     </div>
 </body>
 </html>
