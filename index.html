@@ -1,91 +1,192 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Disc golf site</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="javascript/data.js" defer></script>
-    <script src="javascript/ui.js" defer></script>
-    <script src="javascript/filters.js" defer></script>
-    <script src="javascript/search.js" defer></script>
-    <script src="javascript/script.js" defer></script>
-  </head>
-  <body>
-    <div class="navbar">
-      <!-- TOP ROW -->
-      <div class="nav-top">
-        <div class="logo">DiscGolf</div>
 
-        <div class="search-container">
-          <input type="text" placeholder="Search courses, discs, players..." />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disc golf site</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="javascript/data.js" defer></script>
+  <script src="javascript/ui.js" defer></script>
+  <script src="javascript/filters.js" defer></script>
+  <script src="javascript/search.js" defer></script>
+  <script src="javascript/script.js" defer></script>
+</head>
 
-        <a href="pages/profile.html" class="profile">👤</a>
+<body>
+  <div class="navbar">
+    <!-- TOP ROW -->
+    <div class="nav-top">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="DiscGolf Hub Logo">
+      </a>
+
+      <div class="search-container">
+        <input type="text" placeholder="Search courses, discs, players..." />
       </div>
 
-      <!-- NAV LINKS -->
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="pages/courses.html">Courses</a>
-        <a href="pages/discs.html">Discs</a>
-        <a href="pages/leaderboard.html">Leaderboard</a>
-        <a href="pages/quiz.html">Quiz</a>
+      <a href="pages/profile.html" class="profile">👤</a>
+    </div>
+
+    <!-- NAV LINKS -->
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pages/courses.html">Courses</a>
+      <a href="pages/discs.html">Discs</a>
+      <a href="pages/leaderboard.html">Leaderboard</a>
+      <a href="pages/quiz.html">Quiz</a>
+    </div>
+  </div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Disc Golf</h1>
+
+      <p>
+        Explore courses, discover discs, compete on leaderboards, and improve
+        your game.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="/pages/courses.html" class="primary-btn">
+          Explore Courses
+        </a>
+
+        <a href="/pages/quiz.html" class="secondary-btn"> Take Quiz </a>
       </div>
     </div>
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Discover Disc Golf</h1>
+  </section>
 
-        <p>
-          Explore courses, discover discs, compete on leaderboards, and improve
-          your game.
+  <!-- FEATURES SECTION -->
+  <section class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🥏</div>
+
+      <h2>Explore Courses</h2>
+
+      <p>Discover top-rated disc golf courses and find new places to play.</p>
+
+      <a href="/pages/courses.html">View Courses</a>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🔥</div>
+
+      <h2>Popular Discs</h2>
+
+      <p>Learn about the most used discs from beginners to professionals.</p>
+
+      <a href="/pages/discs.html">Browse Discs</a>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🏆</div>
+
+      <h2>Leaderboards</h2>
+
+      <p>Track rankings, compare scores, and compete with players.</p>
+
+      <a href="/pages/leaderboard.html">View Rankings</a>
+    </div>
+  </section>
+  <!-- FEATURED COURSES -->
+  <section class="featured-courses">
+
+    <div class="section-header">
+      <h2>Featured Courses</h2>
+      <p>Some of the most popular disc golf courses to explore.</p>
+    </div>
+
+    <div class="courses-grid">
+
+      <div class="course-card">
+        <h3>The Breakers</h3>
+
+        <p class="course-location">
+          West Olive, MI
         </p>
 
-        <div class="hero-buttons">
-          <a href="/pages/courses.html" class="primary-btn">
-            Explore Courses
-          </a>
+        <p>
+          Beautiful wooded fairways with challenging layouts.
+        </p>
 
-          <a href="/pages/quiz.html" class="secondary-btn"> Take Quiz </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES SECTION -->
-    <section class="features">
-      <div class="feature-card">
-        <div class="feature-icon">🥏</div>
-
-        <h2>Explore Courses</h2>
-
-        <p>Discover top-rated disc golf courses and find new places to play.</p>
-
-        <a href="/pages/courses.html">View Courses</a>
+        <a href="/pages/courses.html">
+          View Course →
+        </a>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">🔥</div>
 
-        <h2>Popular Discs</h2>
+      <div class="course-card">
+        <h3>Flip City DGC</h3>
 
-        <p>Learn about the most used discs from beginners to professionals.</p>
+        <p class="course-location">
+          Shelby, MI
+        </p>
 
-        <a href="/pages/discs.html">Browse Discs</a>
+        <p>
+          One of Michigan’s most iconic disc golf destinations.
+        </p>
+
+        <a href="/pages/courses.html">
+          View Course →
+        </a>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">🏆</div>
 
-        <h2>Leaderboards</h2>
+      <div class="course-card">
+        <h3>Lakeshore DGC</h3>
 
-        <p>Track rankings, compare scores, and compete with players.</p>
+        <p class="course-location">
+          Spring Lake, MI
+        </p>
 
-        <a href="/pages/leaderboard.html">View Rankings</a>
+        <p>
+          Open fairways mixed with technical wooded holes.
+        </p>
+
+        <a href="/pages/courses.html">
+          View Course →
+        </a>
       </div>
-    </section>
-    
+
     </div>
-  </body>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <h2>DiscGolf Hub</h2>
+
+      <div class="social-links">
+
+        <a href="https://www.instagram.com">
+          <img src="/images/instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://www.youtube.com">
+          <img src="/images/youtube.png" alt="YouTube">
+        </a>
+
+        <a href="https://x.com/home">
+          <img src="/images/twitter.png" alt="Twitter">
+        </a>
+
+        <a href="https://www.linkedin.com/in/trent-beerman/">
+          <img src="/images/linkedin.png" alt="LinkedIn">
+        </a>
+
+      </div>
+
+      <p>© 2026 DiscGolf Hub</p>
+
+    </div>
+
+  </footer>
+
+  </div>
+</body>
+
 </html>
