@@ -1,0 +1,188 @@
+[
+    {
+        "name": "Ross Park",
+        "location": "Norton Shores, MI",
+        "holes": 10,
+        "difficulty": "Easy"
+    },
+    {
+        "name": "McGraft Park",
+        "location": "Muskegon, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Mullally Park",
+        "location": "North Muskegon, MI",
+        "holes": 9,
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Smith-Ryerson Park",
+        "location": "Muskegon, MI",
+        "holes": 9,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Boom Park",
+        "location": "Muskegon, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Lakeshore Disc Golf Course",
+        "location": "Spring Lake, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Grand Haven State Park DGC",
+        "location": "Grand Haven, MI",
+        "holes": 9,
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Hemlock Crossing DGC",
+        "location": "West Olive, MI",
+        "holes": 18,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Kelloggsville Park DGC",
+        "location": "Wyoming, MI",
+        "holes": 9,
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Johnson Park",
+        "location": "Wyoming, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Riverside Park",
+        "location": "Grand Rapids, MI",
+        "holes": 18,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Brinks Park",
+        "location": "Grand Rapids, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Fallasburg Park",
+        "location": "Lowell, MI",
+        "holes": 18,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Jaycee Park",
+        "location": "Grand Rapids, MI",
+        "holes": 18,
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Garfield Park",
+        "location": "Grand Rapids, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Whitehall DGC",
+        "location": "Whitehall, MI",
+        "holes": 36,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Mason County Park",
+        "location": "Ludington, MI",
+        "holes": 24,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Beauty and the Beast DGC",
+        "location": "Ludington, MI",
+        "holes": 18,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Flip City DGC",
+        "location": "Shelby, MI",
+        "holes": 24,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Shore Acres Park",
+        "location": "Holland, MI",
+        "holes": 18,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Quincy Park DGC",
+        "location": "Holland, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Kollen Park DGC",
+        "location": "Holland, MI",
+        "holes": 9,
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Sandy Pines DGC",
+        "location": "Hopkins, MI",
+        "holes": 18,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Whistling Pines DGC",
+        "location": "Wayland, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Hager Park",
+        "location": "Jenison, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Pierce Park",
+        "location": "Grand Rapids, MI",
+        "holes": 9,
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Seidman Park",
+        "location": "Ada, MI",
+        "holes": 18,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Bristol Ridge DGC",
+        "location": "Walker, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    },
+    {
+        "name": "Old Farm Park",
+        "location": "Grand Rapids, MI",
+        "holes": 18,
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Wabasis Park",
+        "location": "Greenville, MI",
+        "holes": 18,
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Landon Park",
+        "location": "Rockford, MI",
+        "holes": 18,
+        "difficulty": "Moderate"
+    }
+]

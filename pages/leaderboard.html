@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disc golf site</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="/javascript/components.js"></script>
     <script src="../javascript/data.js" defer></script>
     <script src="../javascript/ui.js" defer></script>
     <script src="../javascript/filters.js" defer></script>
@@ -14,138 +15,27 @@
 </head>
 
 <body>
-    <div class="navbar">
-
-        <!-- TOP ROW -->
-        <div class="nav-top">
-            <a href="/pages/index.html" class="logo">
-                <img src="/images/logo.png" alt="DiscGolf Hub Logo">
-            </a>
-
-            <div class="search-container">
-                <input type="text" placeholder="Search courses, discs, players...">
-            </div>
-
-            <a href="profile.html" class="profile">👤</a>
-        </div>
-
-        <!-- NAV LINKS -->
-        <div class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="discs.html">Discs</a>
-            <a href="leaderboard.html">Leaderboard</a>
-            <a href="quiz.html">Quiz</a>
-        </div>
-
-    </div>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
 
     <!-- MAIN CONTENT -->
-    <div class="main leaderboard-page">
+    <div class="main">
+    <h1>Leaderboard</h1>
+    <p>Top disc golf players</p>
+<div class="leaderboard-header">
+    <span>Name</span>
+    <span>Rating</span>
+    <span>Country</span>
+    <span>Wins</span>
+</div>
+    <div class="leaderboard-container"></div>
+</div>
 
-        <div class="leaderboard-header">
-            <h1>Leaderboard</h1>
-            <p>Top ranked disc golf players this season.</p>
-        </div>
 
-        <div class="leaderboard-container">
-
-            <div class="leaderboard-row top-player">
-                <span class="rank">#1</span>
-                <span class="player">Jake Thompson</span>
-                <span class="score">1024 pts</span>
-            </div>
-
-            <div class="leaderboard-row">
-                <span class="rank">#2</span>
-                <span class="player">Emma Carter</span>
-                <span class="score">980 pts</span>
-            </div>
-
-            <div class="leaderboard-row">
-                <span class="rank">#3</span>
-                <span class="player">Ryan Miller</span>
-                <span class="score">941 pts</span>
-            </div>
-
-            <div class="leaderboard-row">
-                <span class="rank">#4</span>
-                <span class="player">Olivia Brooks</span>
-                <span class="score">915 pts</span>
-            </div>
-
-            <div class="leaderboard-row">
-                <span class="rank">#5</span>
-                <span class="player">Noah Bennett</span>
-                <span class="score">902 pts</span>
-            </div>
-
-            <div class="leaderboard-row">
-                <span class="rank">#6</span>
-                <span class="player">Sophia Reed</span>
-                <span class="score">884 pts</span>
-            </div>
-
-            <div class="leaderboard-row">
-                <span class="rank">#7</span>
-                <span class="player">Liam Foster</span>
-                <span class="score">870 pts</span>
-            </div>
-
-            <div class="leaderboard-row">
-                <span class="rank">#8</span>
-                <span class="player">Ava Richardson</span>
-                <span class="score">854 pts</span>
-            </div>
-
-            <div class="leaderboard-row">
-                <span class="rank">#9</span>
-                <span class="player">Mason Hayes</span>
-                <span class="score">839 pts</span>
-            </div>
-
-            <div class="leaderboard-row">
-                <span class="rank">#10</span>
-                <span class="player">Ethan Cooper</span>
-                <span class="score">821 pts</span>
-            </div>
-
-        </div>
-
-    </div>
 
     <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-content">
-
-            <h2>DiscGolf Hub</h2>
-
-            <div class="social-links">
-
-                <a href="https://www.instagram.com">
-                    <img src="/images/instagram.png" alt="Instagram">
-                </a>
-
-                <a href="https://www.youtube.com">
-                    <img src="/images/youtube.png" alt="YouTube">
-                </a>
-
-                <a href="https://x.com/home">
-                    <img src="/images/twitter.png" alt="Twitter">
-                </a>
-
-                <a href="https://www.linkedin.com/in/trent-beerman/">
-                    <img src="/images/linkedin.png" alt="LinkedIn">
-                </a>
-
-            </div>
-
-            <p>© 2026 DiscGolf Hub</p>
-
-        </div>
-
-    </footer>
+    <div id="footer"></div>
+    <script src="/javascript/leaderboard.js" defer></script>
 </body>
 
 </html>

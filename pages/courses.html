@@ -7,6 +7,7 @@
     <title>Disc golf site</title>
 
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="/javascript/components.js"></script>
     <script src="../javascript/data.js" defer></script>
     <script src="../javascript/ui.js" defer></script>
     <script src="../javascript/filters.js" defer></script>
@@ -17,143 +18,20 @@
 <body>
 
     <!-- NAVBAR -->
-    <div class="navbar">
+    <div id="navbar"></div>
 
-        <div class="nav-top">
-            <a href="/pages/index.html" class="logo">
-                <img src="/images/logo.png" alt="DiscGolf Hub Logo">
-            </a>
-
-            <div class="search-container">
-                <input type="text" placeholder="Search courses, discs, players...">
-            </div>
-
-            <a href="profile.html" class="profile">👤</a>
-        </div>
-
-        <div class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="discs.html">Discs</a>
-            <a href="leaderboard.html">Leaderboard</a>
-            <a href="quiz.html">Quiz</a>
-        </div>
-
-    </div>
-
-    <!-- MAIN CONTENT -->
     <div class="main">
-        <h1>Disc Golf Courses</h1>
-        <p>Explore the best disc golf courses around the world.</p>
+    <h1>Disc Golf Courses</h1>
+    <p>Explore courses near you</p>
 
-        <div class="courses-container">
+    <div class="courses-container"></div>
+</div>
 
-            <div class="course-card">
-                <h2>The Breakers</h2>
-                <p>Location: West Olive, MI</p>
-                <p>Holes: 18</p>
-                <p>Difficulty: Moderate</p>
-            </div>
-
-            <div class="course-card">
-                <h2>Lakeshore DGC</h2>
-                <p>Location: Spring Lake, MI</p>
-                <p>Holes: 18</p>
-                <p>Difficulty: Moderate</p>
-            </div>
-
-            <div class="course-card">
-                <h2>Ross Park</h2>
-                <p>Location: Muskegon, MI</p>
-                <p>Holes: 10</p>
-                <p>Difficulty: Easy</p>
-            </div>
-
-            <div class="course-card">
-                <h2>McGraft Park</h2>
-                <p>Location: Muskegon, MI</p>
-                <p>Holes: 18</p>
-                <p>Difficulty: Moderate</p>
-            </div>
-
-            <div class="course-card">
-                <h2>Lighthouse C.M</h2>
-                <p>Location: Grand Haven, MI</p>
-                <p>Holes: 14</p>
-                <p>Difficulty: Easy</p>
-            </div>
-
-            <div class="course-card">
-                <h2>Smith Ryerson Park</h2>
-                <p>Location: Muskegon, MI</p>
-                <p>Holes: 9</p>
-                <p>Difficulty: Moderate</p>
-            </div>
-
-            <div class="course-card">
-                <h2>Mullaly Field</h2>
-                <p>Location: Muskegon, MI</p>
-                <p>Holes: 9</p>
-                <p>Difficulty: Moderate</p>
-            </div>
-
-            <div class="course-card">
-                <h2>Sweet Spot DGC</h2>
-                <p>Location: Ravenna, MI</p>
-                <p>Holes: 10</p>
-                <p>Difficulty: Moderate</p>
-            </div>
-
-            <div class="course-card">
-                <h2>Flip City DGP</h2>
-                <p>Location: Shelby, MI</p>
-                <p>Holes: 24</p>
-                <p>Difficulty: Hard</p>
-            </div>
-
-            <div class="course-card">
-                <h2>Whitehall DGC</h2>
-                <p>Location: Whitehall, MI</p>
-                <p>Holes: 36</p>
-                <p>Difficulty: Moderate</p>
-            </div>
-
-        </div>
-    </div>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <div id="footer"></div>
 
-        <div class="footer-content">
-
-            <h2>DiscGolf Hub</h2>
-
-            <div class="social-links">
-
-                <a href="https://www.instagram.com">
-                    <img src="/images/instagram.png" alt="Instagram">
-                </a>
-
-                <a href="https://www.youtube.com">
-                    <img src="/images/youtube.png" alt="YouTube">
-                </a>
-
-                <a href="https://x.com/home">
-                    <img src="/images/twitter.png" alt="Twitter">
-                </a>
-
-                <a href="https://www.linkedin.com/in/trent-beerman/">
-                    <img src="/images/linkedin.png" alt="LinkedIn">
-                </a>
-
-            </div>
-
-            <p>© 2026 DiscGolf Hub</p>
-
-        </div>
-
-    </footer>
-
+    <script src="/javascript/courses.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Paul McBeth",
+        "rating": 1050,
+        "country": "USA",
+        "wins": 6
+    },
+    {
+        "name": "Ricky Wysocki",
+        "rating": 1045,
+        "country": "USA",
+        "wins": 2
+    },
+    {
+        "name": "Eagle McMahon",
+        "rating": 1040,
+        "country": "USA",
+        "wins": 3
+    },
+    {
+        "name": "Calvin Heimburg",
+        "rating": 1035,
+        "country": "USA",
+        "wins": 5
+    },
+    {
+        "name": "Gannon Buhr",
+        "rating": 1038,
+        "country": "USA",
+        "wins": 4
+    },
+    {
+        "name": "Kevin Jones",
+        "rating": 1025,
+        "country": "USA",
+        "wins": 2
+    },
+    {
+        "name": "Chris Dickerson",
+        "rating": 1030,
+        "country": "USA",
+        "wins": 3
+    },
+    {
+        "name": "Kyle Klein",
+        "rating": 1028,
+        "country": "USA",
+        "wins": 1
+    },
+    {
+        "name": "James Conrad",
+        "rating": 1032,
+        "country": "USA",
+        "wins": 1
+    },
+    {
+        "name": "Simon Lizotte",
+        "rating": 1036,
+        "country": "Germany",
+        "wins": 5
+    },
+    {
+        "name": "Ezra Aderhold",
+        "rating": 1024,
+        "country": "USA",
+        "wins": 1
+    },
+    {
+        "name": "Anthony Barela",
+        "rating": 1027,
+        "country": "USA",
+        "wins": 2
+    },
+    {
+        "name": "Joel Freeman",
+        "rating": 1022,
+        "country": "USA",
+        "wins": 1
+    },
+    {
+        "name": "Isaac Robinson",
+        "rating": 1033,
+        "country": "USA",
+        "wins": 3
+    },
+    {
+        "name": "Matty O (Matt Orum)",
+        "rating": 1026,
+        "country": "USA",
+        "wins": 2
+    },
+    {
+        "name": "Noah Meintsma",
+        "rating": 1018,
+        "country": "USA",
+        "wins": 0
+    },
+    {
+        "name": "Cale Leiviska",
+        "rating": 1015,
+        "country": "USA",
+        "wins": 0
+    },
+    {
+        "name": "Adam Hammes",
+        "rating": 1021,
+        "country": "USA",
+        "wins": 1
+    },
+    {
+        "name": "Thomas Gilbert",
+        "rating": 1023,
+        "country": "USA",
+        "wins": 1
+    },
+    {
+        "name": "Zach Melton",
+        "rating": 1019,
+        "country": "USA",
+        "wins": 0
+    }
+]

@@ -6,199 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disc golf site</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="../javascript/data.js" defer></script>
-    <script src="../javascript/ui.js" defer></script>
-    <script src="../javascript/filters.js" defer></script>
-    <script src="../javascript/search.js" defer></script>
-    <script src="../javascript/script.js" defer></script>
+    <script src="/javascript/components.js"></script>
+    <script src="/javascript/data.js" defer></script>
+    <script src="/javascript/ui.js" defer></script>
+    <script src="/javascript/filters.js" defer></script>
+    <script src="/javascript/search.js" defer></script>
+    <script src="/javascript/script.js" defer></script>
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <div class="navbar">
-
-        <div class="nav-top">
-            <a href="/pages/index.html" class="logo">
-                <img src="/images/logo.png" alt="DiscGolf Hub Logo">
-            </a>
-
-            <div class="search-container">
-                <input type="text" placeholder="Search courses, discs, players...">
-            </div>
-
-            <a href="profile.html" class="profile">👤</a>
-        </div>
-
-        <div class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="discs.html">Discs</a>
-            <a href="leaderboard.html">Leaderboard</a>
-            <a href="quiz.html">Quiz</a>
-        </div>
-
-    </div>
+    <div id="navbar"></div>
 
     <!-- MAIN PAGE CONTENT -->
     <div class="main">
-        <h1>Discs</h1>
-        <p>All of your favorite discs in one place</p>
+    <h1>Discs</h1>
+    <p>All discs in one place</p>
 
-        <div class="discs-container">
+    <div class="discs-container"></div>
+</div>
 
-            <div class="disc-card">
-                <h2>Innova Destroyer</h2>
-                <p>Type: Distance Driver</p>
-                <p>Speed: 12 | Glide: 5 | Turn: -1 | Fade: 3</p>
-            </div>
+<script src="/javascript/discs.js" defer></script>
+        
+    <!-- FOOTER -->
+    <div id="footer"></div>
 
-            <div class="disc-card">
-                <h2>Discraft Buzzz</h2>
-                <p>Type: Midrange</p>
-                <p>Speed: 5 | Glide: 4 | Turn: -1 | Fade: 1</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Innova Aviar</h2>
-                <p>Type: Putter</p>
-                <p>Speed: 2 | Glide: 3 | Turn: 0 | Fade: 1</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Discraft Zone</h2>
-                <p>Type: Overstable Approach</p>
-                <p>Speed: 4 | Glide: 3 | Turn: 0 | Fade: 3</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Innova Teebird</h2>
-                <p>Type: Fairway Driver</p>
-                <p>Speed: 7 | Glide: 5 | Turn: 0 | Fade: 2</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Discraft Luna</h2>
-                <p>Type: Putter</p>
-                <p>Speed: 3 | Glide: 3 | Turn: 0 | Fade: 3</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Latitude 64 River</h2>
-                <p>Type: Fairway Driver</p>
-                <p>Speed: 7 | Glide: 7 | Turn: -1 | Fade: 1</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Dynamic Discs Judge</h2>
-                <p>Type: Putter</p>
-                <p>Speed: 2 | Glide: 4 | Turn: 0 | Fade: 1</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Innova Leopard</h2>
-                <p>Type: Fairway Driver</p>
-                <p>Speed: 6 | Glide: 5 | Turn: -2 | Fade: 1</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>MVP Atom</h2>
-                <p>Type: Putter</p>
-                <p>Speed: 3 | Glide: 3 | Turn: 0 | Fade: 1</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Innova Wraith</h2>
-                <p>Type: Distance Driver</p>
-                <p>Speed: 11 | Glide: 5 | Turn: -1 | Fade: 3</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Discraft Undertaker</h2>
-                <p>Type: Fairway Driver</p>
-                <p>Speed: 9 | Glide: 5 | Turn: -1 | Fade: 2</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Innova Firebird</h2>
-                <p>Type: Overstable Fairway Driver</p>
-                <p>Speed: 9 | Glide: 3 | Turn: 0 | Fade: 4</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Discraft Comet</h2>
-                <p>Type: Midrange</p>
-                <p>Speed: 4 | Glide: 5 | Turn: -2 | Fade: 1</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Innova Roc</h2>
-                <p>Type: Midrange</p>
-                <p>Speed: 4 | Glide: 4 | Turn: 0 | Fade: 3</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Discraft Avenger SS</h2>
-                <p>Type: Distance Driver</p>
-                <p>Speed: 10 | Glide: 5 | Turn: -3 | Fade: 1</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Dynamic Discs Warden</h2>
-                <p>Type: Putter</p>
-                <p>Speed: 2 | Glide: 4 | Turn: 0 | Fade: 0</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Latitude 64 Saint</h2>
-                <p>Type: Fairway Driver</p>
-                <p>Speed: 9 | Glide: 7 | Turn: -1 | Fade: 2</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>MVP Volt</h2>
-                <p>Type: Fairway Driver</p>
-                <p>Speed: 8 | Glide: 5 | Turn: -1 | Fade: 2</p>
-            </div>
-
-            <div class="disc-card">
-                <h2>Innova Shark</h2>
-                <p>Type: Midrange</p>
-                <p>Speed: 4 | Glide: 4 | Turn: 0 | Fade: 2</p>
-            </div>
-        </div>
-
-        <!-- FOOTER -->
-        <footer class="footer">
-
-            <div class="footer-content">
-
-                <h2>DiscGolf Hub</h2>
-
-                <div class="social-links">
-
-                    <a href="https://www.instagram.com">
-                        <img src="/images/instagram.png" alt="Instagram">
-                    </a>
-
-                    <a href="https://www.youtube.com">
-                        <img src="/images/youtube.png" alt="YouTube">
-                    </a>
-
-                    <a href="https://x.com/home">
-                        <img src="/images/twitter.png" alt="Twitter">
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/trent-beerman/">
-                        <img src="/images/linkedin.png" alt="LinkedIn">
-                    </a>
-
-                </div>
-
-                <p>© 2026 DiscGolf Hub</p>
-
-            </div>
-
-        </footer>
 </body>
 
 </html>

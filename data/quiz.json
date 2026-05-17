@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the main goal in disc golf?",
+    "answers": [
+      "Hit the trees",
+      "Throw the disc into the basket in the fewest throws",
+      "Throw the farthest distance",
+      "Catch other players’ discs"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which disc is usually easiest for beginners to throw accurately?",
+    "answers": [
+      "Distance Driver",
+      "Fairway Driver",
+      "Putter",
+      "Speed Driver"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What is the metal target called in disc golf?",
+    "answers": [
+      "Hoop",
+      "Goal",
+      "Basket",
+      "Net"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What is a score of one throw under par called?",
+    "answers": [
+      "Bogey",
+      "Eagle",
+      "Birdie",
+      "Ace"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "If your disc lands in water or out of bounds, what usually happens?",
+    "answers": [
+      "You win the hole",
+      "You get an extra throw penalty",
+      "You skip your next turn",
+      "Nothing"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which throw is most common for beginners to learn first?",
+    "answers": [
+      "Roller",
+      "Tomahawk",
+      "Backhand",
+      "Scoober"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What should players yell if a disc might hit someone?",
+    "answers": [
+      "Heads up!",
+      "Goal!",
+      "Fore!",
+      "Duck!"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "How many throws does an “ace” take?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which type of disc is designed for the longest throws?",
+    "answers": [
+      "Putter",
+      "Midrange",
+      "Driver",
+      "Catch Disc"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What is good sportsmanship in disc golf?",
+    "answers": [
+      "Distracting other players",
+      "Letting faster groups play through",
+      "Throwing before others finish",
+      "Moving another player’s disc"
+    ],
+    "correct": 1
+  }
+]

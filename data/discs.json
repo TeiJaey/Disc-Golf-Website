@@ -1,0 +1,402 @@
+[
+    {
+        "name": "Innova Destroyer",
+        "type": "Distance Driver",
+        "speed": 12,
+        "glide": 5,
+        "turn": -1,
+        "fade": 3
+    },
+    {
+        "name": "Discraft Buzzz",
+        "type": "Midrange",
+        "speed": 5,
+        "glide": 4,
+        "turn": -1,
+        "fade": 1
+    },
+    {
+        "name": "Innova Aviar",
+        "type": "Putter",
+        "speed": 2,
+        "glide": 3,
+        "turn": 0,
+        "fade": 1
+    },
+    {
+        "name": "Discraft Zone",
+        "type": "Approach",
+        "speed": 4,
+        "glide": 3,
+        "turn": 0,
+        "fade": 3
+    },
+    {
+        "name": "Innova Teebird",
+        "type": "Fairway Driver",
+        "speed": 7,
+        "glide": 5,
+        "turn": 0,
+        "fade": 2
+    },
+    {
+        "name": "Discraft Luna",
+        "type": "Putter",
+        "speed": 3,
+        "glide": 3,
+        "turn": 0,
+        "fade": 3
+    },
+    {
+        "name": "Latitude 64 River",
+        "type": "Fairway Driver",
+        "speed": 7,
+        "glide": 7,
+        "turn": -1,
+        "fade": 1
+    },
+    {
+        "name": "Dynamic Discs Judge",
+        "type": "Putter",
+        "speed": 2,
+        "glide": 4,
+        "turn": 0,
+        "fade": 1
+    },
+    {
+        "name": "Innova Leopard",
+        "type": "Fairway Driver",
+        "speed": 6,
+        "glide": 5,
+        "turn": -2,
+        "fade": 1
+    },
+    {
+        "name": "MVP Atom",
+        "type": "Putter",
+        "speed": 3,
+        "glide": 3,
+        "turn": 0,
+        "fade": 1
+    },
+    {
+        "name": "Innova Wraith",
+        "type": "Distance Driver",
+        "speed": 11,
+        "glide": 5,
+        "turn": -1,
+        "fade": 3
+    },
+    {
+        "name": "Discraft Undertaker",
+        "type": "Fairway Driver",
+        "speed": 9,
+        "glide": 5,
+        "turn": -1,
+        "fade": 2
+    },
+    {
+        "name": "Innova Firebird",
+        "type": "Fairway Driver",
+        "speed": 9,
+        "glide": 3,
+        "turn": 0,
+        "fade": 4
+    },
+    {
+        "name": "Discraft Comet",
+        "type": "Midrange",
+        "speed": 4,
+        "glide": 5,
+        "turn": -2,
+        "fade": 1
+    },
+    {
+        "name": "Innova Roc",
+        "type": "Midrange",
+        "speed": 4,
+        "glide": 4,
+        "turn": 0,
+        "fade": 3
+    },
+    {
+        "name": "Discraft Avenger SS",
+        "type": "Distance Driver",
+        "speed": 10,
+        "glide": 5,
+        "turn": -3,
+        "fade": 1
+    },
+    {
+        "name": "Dynamic Discs Warden",
+        "type": "Putter",
+        "speed": 2,
+        "glide": 4,
+        "turn": 0,
+        "fade": 0
+    },
+    {
+        "name": "Latitude 64 Saint",
+        "type": "Fairway Driver",
+        "speed": 9,
+        "glide": 7,
+        "turn": -1,
+        "fade": 2
+    },
+    {
+        "name": "MVP Volt",
+        "type": "Fairway Driver",
+        "speed": 8,
+        "glide": 5,
+        "turn": -1,
+        "fade": 2
+    },
+    {
+        "name": "Innova Shark",
+        "type": "Midrange",
+        "speed": 4,
+        "glide": 4,
+        "turn": 0,
+        "fade": 2
+    },
+    {
+        "name": "Discraft Hades",
+        "type": "Distance Driver",
+        "speed": 12,
+        "glide": 6,
+        "turn": -3,
+        "fade": 2
+    },
+    {
+        "name": "Innova Mako3",
+        "type": "Midrange",
+        "speed": 5,
+        "glide": 5,
+        "turn": 0,
+        "fade": 0
+    },
+    {
+        "name": "Latitude 64 Pure",
+        "type": "Putter",
+        "speed": 3,
+        "glide": 3,
+        "turn": -1,
+        "fade": 1
+    },
+    {
+        "name": "Dynamic Discs Escape",
+        "type": "Fairway Driver",
+        "speed": 9,
+        "glide": 5,
+        "turn": -1,
+        "fade": 2
+    },
+    {
+        "name": "MVP Tesla",
+        "type": "Distance Driver",
+        "speed": 9,
+        "glide": 5,
+        "turn": -1,
+        "fade": 2
+    },
+    {
+        "name": "Discraft Nuke",
+        "type": "Distance Driver",
+        "speed": 13,
+        "glide": 5,
+        "turn": -1,
+        "fade": 3
+    },
+    {
+        "name": "Innova Destroyer (Star)",
+        "type": "Distance Driver",
+        "speed": 12,
+        "glide": 5,
+        "turn": -1,
+        "fade": 3
+    },
+    {
+        "name": "Latitude 64 Ballista",
+        "type": "Distance Driver",
+        "speed": 14,
+        "glide": 5,
+        "turn": -1,
+        "fade": 3
+    },
+    {
+        "name": "Dynamic Discs Felon",
+        "type": "Fairway Driver",
+        "speed": 9,
+        "glide": 3,
+        "turn": 0,
+        "fade": 4
+    },
+    {
+        "name": "MVP Hex",
+        "type": "Midrange",
+        "speed": 5,
+        "glide": 5,
+        "turn": -1,
+        "fade": 1
+    },
+    {
+        "name": "Innova Eagle",
+        "type": "Fairway Driver",
+        "speed": 7,
+        "glide": 4,
+        "turn": -1,
+        "fade": 3
+    },
+    {
+        "name": "Discraft Buzzz SS",
+        "type": "Midrange",
+        "speed": 5,
+        "glide": 4,
+        "turn": -2,
+        "fade": 1
+    },
+    {
+        "name": "Latitude 64 Fuse",
+        "type": "Midrange",
+        "speed": 5,
+        "glide": 6,
+        "turn": -1,
+        "fade": 0
+    },
+    {
+        "name": "Dynamic Discs Truth",
+        "type": "Midrange",
+        "speed": 5,
+        "glide": 5,
+        "turn": 0,
+        "fade": 2
+    },
+    {
+        "name": "MVP Anode",
+        "type": "Putter",
+        "speed": 2,
+        "glide": 3,
+        "turn": 0,
+        "fade": 1
+    },
+    {
+        "name": "Innova Sidewinder",
+        "type": "Distance Driver",
+        "speed": 9,
+        "glide": 5,
+        "turn": -3,
+        "fade": 1
+    },
+    {
+        "name": "Discraft Crank",
+        "type": "Distance Driver",
+        "speed": 13,
+        "glide": 5,
+        "turn": -2,
+        "fade": 2
+    },
+    {
+        "name": "Latitude 64 Diamond",
+        "type": "Fairway Driver",
+        "speed": 8,
+        "glide": 6,
+        "turn": -3,
+        "fade": 1
+    },
+    {
+        "name": "Dynamic Discs Raider",
+        "type": "Distance Driver",
+        "speed": 13,
+        "glide": 5,
+        "turn": -1,
+        "fade": 3
+    },
+    {
+        "name": "MVP Wave",
+        "type": "Distance Driver",
+        "speed": 11,
+        "glide": 5,
+        "turn": -2,
+        "fade": 2
+    },
+    {
+        "name": "Innova Tern",
+        "type": "Distance Driver",
+        "speed": 12,
+        "glide": 6,
+        "turn": -3,
+        "fade": 2
+    },
+    {
+        "name": "Discraft Meteor",
+        "type": "Midrange",
+        "speed": 5,
+        "glide": 5,
+        "turn": -3,
+        "fade": 1
+    },
+    {
+        "name": "Latitude 64 Saint Pro",
+        "type": "Fairway Driver",
+        "speed": 8,
+        "glide": 5,
+        "turn": 0,
+        "fade": 2
+    },
+    {
+        "name": "Dynamic Discs Judge Prime",
+        "type": "Putter",
+        "speed": 2,
+        "glide": 4,
+        "turn": 0,
+        "fade": 1
+    },
+    {
+        "name": "MVP Resistor",
+        "type": "Fairway Driver",
+        "speed": 6,
+        "glide": 4,
+        "turn": 0,
+        "fade": 3
+    },
+    {
+        "name": "Innova Thunderbird",
+        "type": "Fairway Driver",
+        "speed": 9,
+        "glide": 5,
+        "turn": 0,
+        "fade": 2
+    },
+    {
+        "name": "Discraft Stalker",
+        "type": "Fairway Driver",
+        "speed": 7,
+        "glide": 5,
+        "turn": -1,
+        "fade": 2
+    },
+    {
+        "name": "Latitude 64 Saint Pro X",
+        "type": "Fairway Driver",
+        "speed": 8,
+        "glide": 4,
+        "turn": 0,
+        "fade": 3
+    },
+    {
+        "name": "Dynamic Discs Maverick",
+        "type": "Fairway Driver",
+        "speed": 7,
+        "glide": 4,
+        "turn": -1.5,
+        "fade": 2
+    },
+    {
+        "name": "MVP Crave",
+        "type": "Fairway Driver",
+        "speed": 6,
+        "glide": 5,
+        "turn": -1,
+        "fade": 1
+    }
+]
