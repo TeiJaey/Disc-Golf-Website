@@ -1,150 +1,170 @@
-﻿// =========================
-// SEARCH MODULE
-// =========================
+let courses = [];
+let discs = [];
+let players = [];
 
-const searchContainer = document.querySelector(".search-container");
-const searchInput = document.querySelector(".search-container input");
-
-const urlParams = new URLSearchParams(window.location.search);
-const initialSearchQuery = urlParams.get("search")?.trim() ?? "";
-
-function getCurrentPageName() {
-    const path = window.location.pathname;
-    const segments = path.split("/").filter(Boolean);
-    return segments.length ? segments[segments.length - 1] : "index.html";
-}
-
-function findMatchingItems(query) {
-    if (!query) {
-        return [];
+window.addEventListener("load", async () => {
+    // Load searchable data from the data folder
+    try {
+        [courses, discs, players] = await Promise.all([
+            fetch("/data/courses.json").then(res => res.json()),
+            fetch("/data/discs.json").then(res => res.json()),
+            fetch("/data/players.json").then(res => res.json())
+        ]);
+    } catch (error) {
+        console.error("Search data failed to load:", error);
+        return;
     }
 
-    const normalizedQuery = query.toLowerCase();
-    const results = [];
+    const searchContainer = await waitForElement(".search-container", 3000);
+    const searchInput = searchContainer?.querySelector("input");
+    const dropdown = searchContainer?.querySelector(".search-dropdown");
 
-    searchSections.forEach(section => {
-        const matches = section.items
-            .filter(item => {
-                const text = item.name.toLowerCase();
-                const extra = section.label(item).toLowerCase();
-                return text.includes(normalizedQuery) || extra.includes(normalizedQuery);
-            })
-            .slice(0, 5);
+    if (!searchInput || !dropdown) return;
 
-        if (matches.length) {
-            results.push({ section, matches });
+    searchInput.addEventListener("input", () => {
+        const query = searchInput.value.toLowerCase().trim();
+        updateSearchDropdown(query, dropdown);
+    });
+
+    searchInput.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            hideDropdown(dropdown);
+            searchInput.blur();
         }
     });
 
-    return results;
-}
-
-function displaySearchDropdown(query) {
-    if (!dropdown || !query) {
-        hideSearchDropdown();
-        return;
-    }
-
-    const results = findMatchingItems(query);
-    clearSearchDropdown();
-
-    if (!results.length) {
-        const empty = document.createElement("div");
-        empty.className = "search-dropdown-empty";
-        empty.textContent = `No results for "${query}"`;
-        dropdown.appendChild(empty);
-        showSearchDropdown();
-        return;
-    }
-
-    results.forEach(group => {
-        const label = document.createElement("div");
-        label.className = "search-dropdown-category";
-        label.textContent = group.section.title;
-        dropdown.appendChild(label);
-
-        group.matches.forEach(item => {
-            dropdown.appendChild(
-                createDropdownOption(item, group.section, (selectedItem, selectedSection) => {
-                    window.location.href = `${selectedSection.page}?search=${encodeURIComponent(selectedItem.name)}`;
-                })
-            );
-        });
+    document.addEventListener("click", event => {
+        if (!searchContainer.contains(event.target)) {
+            hideDropdown(dropdown);
+        }
     });
+});
 
-    showSearchDropdown();
-}
-
-function initializeSearchEvents() {
-    if (!searchInput) {
-        return;
-    }
-
-    searchInput.addEventListener("input", () => {
-        displaySearchDropdown(searchInput.value.trim());
-    });
-
-    searchInput.addEventListener("focus", () => {
-        displaySearchDropdown(searchInput.value.trim());
-    });
-
-    searchInput.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-            hideSearchDropdown();
+function waitForElement(selector, timeout = 3000) {
+    return new Promise(resolve => {
+        const element = document.querySelector(selector);
+        if (element) {
+            resolve(element);
             return;
         }
 
-        if (event.key === "Enter") {
-            event.preventDefault();
-            handleSearchSubmit(searchInput.value.trim());
-        }
-    });
+        const observer = new MutationObserver(() => {
+            const found = document.querySelector(selector);
+            if (found) {
+                observer.disconnect();
+                clearTimeout(timer);
+                resolve(found);
+            }
+        });
 
-    document.addEventListener("click", (event) => {
-        if (searchContainer && !searchContainer.contains(event.target)) {
-            hideSearchDropdown();
-        }
+        observer.observe(document.body, { childList: true, subtree: true });
+
+        const timer = setTimeout(() => {
+            observer.disconnect();
+            resolve(null);
+        }, timeout);
     });
 }
 
-function handleSearchSubmit(query) {
+function updateSearchDropdown(query, dropdown) {
+    dropdown.innerHTML = "";
+
     if (!query) {
+        hideDropdown(dropdown);
         return;
     }
 
-    const currentPage = getCurrentPageName();
-    const routesByPage = {
-        "courses.html": "/pages/courses.html",
-        "discs.html": "/pages/discs.html",
-        "leaderboard.html": "/pages/leaderboard.html"
-    };
+    const results = [];
 
-    const basePage = routesByPage[currentPage] || "/pages/courses.html";
-    window.location.href = `${basePage}?search=${encodeURIComponent(query)}`;
+    courses.forEach(course => {
+        if (
+            course.name.toLowerCase().includes(query) ||
+            course.location.toLowerCase().includes(query)
+        ) {
+            results.push({
+                type: "Course",
+                name: course.name,
+                meta: course.location,
+                href: "/pages/courses.html"
+            });
+        }
+    });
+
+    discs.forEach(disc => {
+        if (
+            disc.name.toLowerCase().includes(query) ||
+            disc.type.toLowerCase().includes(query)
+        ) {
+            results.push({
+                type: "Disc",
+                name: disc.name,
+                meta: disc.type,
+                href: "/pages/discs.html"
+            });
+        }
+    });
+
+    players.forEach(player => {
+        if (player.name.toLowerCase().includes(query)) {
+            results.push({
+                type: "Player",
+                name: player.name,
+                meta: `Points: ${player.points}`,
+                href: "/pages/leaderboard.html"
+            });
+        }
+    });
+
+    if (results.length === 0) {
+        dropdown.innerHTML = `
+            <div class="search-dropdown-empty">
+                No results found for “${escapeHtml(query)}”.
+            </div>
+        `;
+        showDropdown(dropdown);
+        return;
+    }
+
+    const grouped = results.reduce((acc, item) => {
+        if (!acc[item.type]) acc[item.type] = [];
+        acc[item.type].push(item);
+        return acc;
+    }, {});
+
+    Object.keys(grouped).forEach(type => {
+        const category = document.createElement("div");
+        category.className = "search-dropdown-category";
+        category.textContent = type;
+        dropdown.appendChild(category);
+
+        grouped[type].slice(0, 5).forEach(result => {
+            const button = document.createElement("a");
+            button.className = "search-dropdown-item";
+            button.href = result.href;
+            button.innerHTML = `
+                <span class="search-dropdown-item-title">${escapeHtml(result.name)}</span>
+                <span class="search-dropdown-item-meta">${escapeHtml(result.meta)}</span>
+            `;
+            dropdown.appendChild(button);
+        });
+    });
+
+    showDropdown(dropdown);
 }
 
-function applyPageFilters() {
-    const currentPage = getCurrentPageName();
+function showDropdown(dropdown) {
+    dropdown.classList.remove("hidden");
+}
 
-    if (!initialSearchQuery) {
-        return;
-    }
+function hideDropdown(dropdown) {
+    dropdown.classList.add("hidden");
+}
 
-    if (searchInput) {
-        searchInput.value = initialSearchQuery;
-    }
-
-    if (currentPage === "courses.html") {
-        filterCards(".course-card", ".courses-container", initialSearchQuery);
-        return;
-    }
-
-    if (currentPage === "discs.html") {
-        filterCards(".disc-card", ".discs-container", initialSearchQuery);
-        return;
-    }
-
-    if (currentPage === "leaderboard.html") {
-        filterLeaderboard(initialSearchQuery);
-    }
+function escapeHtml(value) {
+    return value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 }

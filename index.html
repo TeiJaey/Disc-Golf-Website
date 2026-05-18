@@ -7,136 +7,153 @@
   <title>Disc golf site</title>
   <link rel="stylesheet" href="css/styles.css" />
   <script src="/javascript/components.js"></script>
-  <script src="javascript/data.js" defer></script>
-  <script src="javascript/ui.js" defer></script>
-  <script src="javascript/filters.js" defer></script>
-  <script src="javascript/search.js" defer></script>
-  <script src="javascript/script.js" defer></script>
+  <script src="/javascript/search.js" defer></script>
 </head>
 
 <body>
 
   <!-- NAVBAR -->
   <div id="navbar"></div>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Discover Disc Golf</h1>
-
-      <p>
-        Explore courses, discover discs, compete on leaderboards, and improve
-        your game.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="/pages/courses.html" class="primary-btn">
-          Explore Courses
-        </a>
-
-        <a href="/pages/quiz.html" class="secondary-btn"> Take Quiz </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES SECTION -->
-  <section class="features">
-    <div class="feature-card">
-      <div class="feature-icon">🥏</div>
-
-      <h2>Explore Courses</h2>
-
-      <p>Discover top-rated disc golf courses and find new places to play.</p>
-
-      <a href="/pages/courses.html">View Courses</a>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">🔥</div>
-
-      <h2>Popular Discs</h2>
-
-      <p>Learn about the most used discs from beginners to professionals.</p>
-
-      <a href="/pages/discs.html">Browse Discs</a>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon">🏆</div>
-
-      <h2>Leaderboards</h2>
-
-      <p>Track rankings, compare scores, and compete with players.</p>
-
-      <a href="/pages/leaderboard.html">View Rankings</a>
-    </div>
-  </section>
-  <!-- FEATURED COURSES -->
-  <section class="featured-courses">
-
-    <div class="section-header">
-      <h2>Featured Courses</h2>
-      <p>Some of the most popular disc golf courses to explore.</p>
-    </div>
-
-    <div class="courses-grid">
-
-      <div class="course-card">
-        <h3>The Breakers</h3>
-
-        <p class="course-location">
-          West Olive, MI
-        </p>
+  <div class="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover Disc Golf</h1>
 
         <p>
-          Beautiful wooded fairways with challenging layouts.
+          Explore courses, discover discs, compete on leaderboards, and improve
+          your game.
         </p>
 
-        <a href="/pages/courses.html">
-          View Course →
-        </a>
+        <div class="hero-buttons">
+          <a href="/pages/courses.html" class="primary-btn">
+            Explore Courses
+          </a>
+
+          <a href="/pages/quiz.html" class="secondary-btn"> Take Quiz </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features">
+      <div class="feature-card">
+        <div class="feature-icon">🥏</div>
+
+        <h2>Explore Courses</h2>
+
+        <p>Discover top-rated disc golf courses and find new places to play.</p>
+
+        <a href="/pages/courses.html">View Courses</a>
       </div>
 
+      <div class="feature-card">
+        <div class="feature-icon">🔥</div>
 
-      <div class="course-card">
-        <h3>Flip City DGC</h3>
+        <h2>Popular Discs</h2>
 
-        <p class="course-location">
-          Shelby, MI
-        </p>
+        <p>Learn about the most used discs from beginners to professionals.</p>
 
-        <p>
-          One of Michigan’s most iconic disc golf destinations.
-        </p>
-
-        <a href="/pages/courses.html">
-          View Course →
-        </a>
+        <a href="/pages/discs.html">Browse Discs</a>
       </div>
 
+      <div class="feature-card">
+        <div class="feature-icon">🏆</div>
 
-      <div class="course-card">
-        <h3>Lakeshore DGC</h3>
+        <h2>Leaderboards</h2>
 
-        <p class="course-location">
-          Spring Lake, MI
-        </p>
+        <p>Track rankings, compare scores, and compete with players.</p>
 
-        <p>
-          Open fairways mixed with technical wooded holes.
-        </p>
+        <a href="/pages/leaderboard.html">View Rankings</a>
+      </div>
+    </section>
+    <!-- FEATURED COURSES -->
+    <section class="featured-courses">
 
-        <a href="/pages/courses.html">
-          View Course →
-        </a>
+      <div class="section-header">
+        <h2>Featured Courses</h2>
+        <p>Handpicked courses that offer the best combination of scenery, challenge, and fun.</p>
       </div>
 
-    </div>
+      <div class="courses-grid">
 
-  </section>
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-badge">Featured</span>
+            <h3>The Breakers</h3>
+            <p class="course-location">West Olive, MI</p>
+          </div>
 
-  <!-- FOOTER -->
-  <div id="footer"></div>
+          <p class="course-description">
+            Beautiful wooded fairways with challenging layouts and a memorable finish.
+          </p>
+
+          <a href="/pages/courses.html" class="course-link secondary-btn">
+            View course →
+          </a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-badge accent">Top Pick</span>
+            <h3>Flip City DGC</h3>
+            <p class="course-location">Shelby, MI</p>
+          </div>
+
+          <p class="course-description">
+            One of Michigan’s most iconic disc golf destinations with plenty of elevation and variety.
+          </p>
+
+          <a href="/pages/courses.html" class="course-link secondary-btn">
+            View course →
+          </a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-badge">New</span>
+            <h3>Lakeshore DGC</h3>
+            <p class="course-location">Spring Lake, MI</p>
+          </div>
+
+          <p class="course-description">
+            Open fairways mixed with technical wooded holes—perfect for improving every shot.
+          </p>
+
+          <a href="/pages/courses.html" class="course-link secondary-btn">
+            View course →
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="instructions-section">
+      <div class="section-header">
+        <h2>Disc Golf Rules</h2>
+        <p>Stick to these simple ground rules so your round stays smooth, fair, and fun for everyone.</p>
+      </div>
+
+      <div class="instructions-list-wrapper">
+        <ol class="instructions-list">
+          <li><strong>Tee Off:</strong> You begin each hole from a designated tee area (usually a concrete or turf pad).
+            You must throw the disc from behind this designated line.</li>
+          <li><strong>Play From the Lie:</strong> Wherever your disc lands becomes the spot for your next throw, which
+            is called your "lie". You must place one foot directly behind where your disc came to rest before making
+            your next throw.</li>
+          <li><strong>Reach the Target:</strong> You continue throwing from where the disc lands until it lands inside
+            the metal chains or the basket itself.</li>
+          <li><strong>Scoring:</strong> Each throw counts as one stroke. Just like ball golf, holes are assigned a "Par"
+            (the expected number of throws). The lowest score wins.</li>
+        </ol>
+      </div>
+    </section>
+
+    <div id="search-results"></div>
+  
+    <!-- FOOTER -->
+    <div id="footer"></div>
 
   </div>
 </body>
